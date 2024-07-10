@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <link rel="icon" href="https://cache.refatorando.com/wp-content/uploads/2023/05/Favicon_Refatorando-1-100x100.png" type="image/x-icon">
+    <link rel="stylesheet" href="./public/css/styles.css">
+</head>
+
+<body>
+    <button class="darkmode-toggle">Modo  Escuro/Claro</button>
+
+    <div class="container">
+        <div class="moon"> 
+            <h1>To-Do List</h1>
+            <img src="./public/images/moon.svg">
+        </div>
+
+        <div class="pesquisa">
+            <input type="text" id="search" placeholder="Insira o todo aqui...">
+            
+        </div>
+        
+        
+        <div class="caixa1"> 
+            
+            <input type="checkbox">
+            <p>Ler 10 páginas de um livro </p> 
+        </div>
+
+        <!-- <div class="caixa1">
+            <input type="checkbox">
+            <p>Meditar</p>  -->
+            
+        </div>
+
+        <div class="caixa1">
+            <input type="checkbox">
+            <p>Editar 2 videos</p>
+
+        </div>
+
+        <div class="caixa1">
+            <input type="checkbox">
+            <p>Criar portifólio</p>
+        </div>
+
+        <div class="caixa1">
+            <input type="checkbox">
+            <p>Academia</p>
+        </div>
+
+        <div class="rodape">
+            <a href="#">4 itens restantes</a>
+            <a href="#">Todos</a>
+            <a href="#">Ativos</a>
+            <a href="#">Conclupidos</a>
+            <a href="#">Limpeza Completa</a>
+        </div>
+    </div>
+    <script>
+        document.getElementById('search').addEventListener('input', function() {
+        const searchValue = this.value.toLowerCase();
+        const items = document.querySelectorAll('.caixa1');
+
+        items.forEach(item => {
+            const itemText = item.querySelector('p').textContent.toLowerCase();
+            if (itemText.includes(searchValue)) {
+                item.style.display = '';
+                } else {
+                    item.style.display = 'none';
+                }
+        });
+            
+    });
+    </script>
+
+</html>

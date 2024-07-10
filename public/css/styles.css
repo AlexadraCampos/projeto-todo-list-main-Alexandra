@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+:root {
+    --bg-darkmode: #000;
+    --bg-lightmode:rgb(250, 253, 253);
+   
+
+}
+
+
+body {
+    display: flex; 
+    justify-content: space-around;
+    background-image: url("../images/header.png");
+    background-position: top ;
+    background-repeat: no-repeat;
+    background-color: var(--bg-lightmode);
+    color:#d6d7d8b2;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    
+}
+
+.container {
+    margin-top: 230px;
+    width: 500px;
+
+}
+
+.pesquisa input {
+  height: 50px;
+  font-size: 20px;
+  width: calc(100% - 6px);
+  margin-bottom: 40px;
+}
+
+.moon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+
+
+}
+
+.caixa1 {
+    display: flex;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(36, 83, 128);
+    border-bottom: solid 1px #D1D5DB;
+    gap: 10px;
+    
+    
+
+}
+
+.caixa1 input {
+    width: 30px;
+    margin-left: 15px;
+    background-color: #d3d3d3;
+    border: 2px solid #c9c9c9;
+   
+}
+
+.rodape a {
+    
+    align-content: center;
+    background-color: white;
+    text-decoration: none;
+    
+}
+
+.rodape {
+    display: flex;
+    gap: 10px;
+       
+}
+
+
+.darkmode-toggle {
+    width: 30px;
+    height: 30px;
+    background-image: url('../images/moon.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
