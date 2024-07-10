@@ -78,11 +78,11 @@ body {
 }
 
 
-.darkmode-toggle {
+.darkmode-toggle /* botão */ {
     width: 30px;
     height: 30px;
     background-image: url('../images/moon.svg');
     background-position: center;
-    background-repeat: no-repeat;
+    
 
 }
